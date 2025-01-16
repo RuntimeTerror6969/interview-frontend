@@ -18,7 +18,7 @@ const SubmissionForm = () => {
       // Include the user's name in the formData
       const submissionData = { ...formData, name: user.name };
       await axios.post(
-        "http://localhost:5000/api/submissions",
+        "https://interview-taiyari.vercel.app/api/submissions",
         submissionData,
         {
           headers: { Authorization: `Bearer ${token}` },

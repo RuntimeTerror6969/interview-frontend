@@ -14,7 +14,7 @@ function SubmissionList() {
   const fetchSubmissions = async (page) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/submissions?page=${page}`
+        `https://interview-taiyari.vercel.app/api/submissions?page=${page}`
       );
       setSubmissions(data.submissions);
       setTotalPages(data.totalPages);
